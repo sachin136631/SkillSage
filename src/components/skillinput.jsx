@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 
-const skillinput = ({AddedSkill}) => {
+const Skillinput = ({onAddSkill}) => {
     const [skill,setSkill]=useState('');
     const [level,setLevel]=useState('');
     
     const handleSubmit=(e)=>{
         e.preventDefault();
         if(skill&level){
-            AddedSkill({skill,level:parseInt(level)});
+            onAddSkill({skill,level:parseInt(level)});
             setLevel("");
             setSkill("");
         }
@@ -32,4 +32,4 @@ const skillinput = ({AddedSkill}) => {
   )
 }
 
-export default skillinput
+export default Skillinput

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2'; 
 
-const skillchart = ({skills}) => {
+const SkillChart = ({skills}) => {
     const data={
         labels:skills.map((s)=>s.skill),
         datasets:[
@@ -21,4 +21,4 @@ const skillchart = ({skills}) => {
   )
 }
 
-export default skillchart
+export default SkillChart

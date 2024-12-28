@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
-import SkillChart from '../components/skillchart';
+import SkillChart from '../components/SkillChart';
 
-const dashboard = () => {
+const Dashboard = () => {
     const [skills,setSkills]=useState([{skill:'python',level:80},{skill:'java',level:90}]);
   return (
     <div>
@@ -11,4 +11,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard
